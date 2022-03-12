@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.scrollToTop{
+    position: fixed;
+    height: 50px;
+    padding: 10px;
+    right: 20px;
+    bottom: -20vh;
+    background: #ececec;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 999;
+    transition: .5s linear;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.scrollToTop:hover{
+    background: #cecece;
+}
+
+.scrollToTop.active{
+    visibility: visible;
+    opacity: 1;
+    bottom: 40px;
+}
